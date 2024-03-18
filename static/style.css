@@ -1,0 +1,58 @@
+body {
+    background-color:  #043153;
+    font-family: 'Poppins', sans-serif;  
+    color: #d1d0d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.heading {
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.logo {
+    height: 2em; 
+    vertical-align: middle; 
+}
+
+
+.container {
+    text-align: center;
+    max-width: 968px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 84%;
+    margin-right: 4px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+input[type="submit"] {
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin: 12px;
+    background-color: #F8E831;
+    color: #043153;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 12px;
+    background-color: #F8E831;
+    color: #043153;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}

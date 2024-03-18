@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreciseDecise</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <p class="heading"> A smart way to make informed purchases on  <img src="static/flipkart.svg" alt="flipkart" class="logo">  by analyzing product reviews</p>
+    
+    <div class="container">
+        <h2>Flipkart Product-Reviews Sentiment Analyser</h2>
+        <form method="POST" action="/output">
+            <input type="text" name="url" placeholder="Enter Flipkart product-reviews URL" required>
+            <input type="submit" value="Predict Sentiment">
+        </form>
+        
+        <p>Please Enter the Flipkart product-reviews url in the format like this:</p>
+        <p style="color: #F8E831;">https://www.flipkart.com/(product name)/product-reviews/?pid=()&lid=()&marketplace=FLIPKART</p>
+    
+        <button id="copyUrlButton" >Copy Demo URL</button>
+    </div>
+    <script>
+        function copyDemoUrl() {
+            var demoUrl = "https://www.flipkart.com/samsung-galaxy-f15-5g-jazzy-green-128-gb/product-reviews/itm1357d201bcb0a?pid=MOBGYBAVT967G37V&lid=LSTMOBGYBAVT967G37VWBN6IA&marketplace=FLIPKART";
+            navigator.clipboard.writeText(demoUrl).then(function() {
+                alert("Demo URL copied to clipboard!");
+            }, function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        // Event listeners for touch and click
+        document.getElementById("copyUrlButton").addEventListener("click", copyDemoUrl);
+        document.getElementById("copyUrlButton").addEventListener("touchstart", copyDemoUrl);
+    </script>
+</body>
+</html>

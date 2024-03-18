@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output - Flipkart Product-Reviews Sentiment Analyser</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_output.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class='navbar-items' >Flipkart Product-Reviews Sentiment Analysis</h1>
+        <a class="navbar-items" href="/">Home</a>
+        
+    </nav>
+
+    <div class="container">
+        {% if dataset %}
+        <div class="table-column">
+            <h2>{{ product }}</h2>
+            <p class="font-size">Overall Rating: {{ overall_rating }}</p>
+            <table>
+                <caption>Top 10 reviews and ratings of the product</caption>
+                <tr>
+                    <th>Review</th>
+                    <th>Rating</th>
+                </tr>
+                {% for data in dataset %}
+                <tr>
+                    <td>{{ data.review }}</td>
+                    <td>{{ data.rating }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div class="inference-column">
+            <h2>Sentiment Inference</h2>
+            <div class="positive">
+                <h2>No. of Positive Reviews: {{ no_pos_revs }}</h2>
+            </div>
+            <div class="negative">
+                <h2>No. of Negative Reviews: {{ no_neg_revs }}</h2>
+            </div>
+            <div>
+                <h2>Overall Sentiment</h2>
+                {% if score > 0 %}
+                <h1 class="positive">Amazing! Looks like most reviews are positive</h1>
+                <p class="font-size">sentiment confidence: {{score*100}} %</p>
+                {% else %}
+                <h1 class="negative">Woah! aware there are alot of negative reviews</h1>
+                <p class="font-size">sentiment confidence: {{score * 100 }} %</p>
+                {% endif %}    
+                
+                <p>score range(-1, 1) with 1 being 100% positive and -1 being 100% negative</p>
+            </div>
+        </div>
+        {% else %}
+            <h1>Please Enter the correct Flipkart product url in the format like this:</h1>
+            <p style="color: #F8E831;">https://www.flipkart.com/(product name)/product-reviews/?pid=()&lid=()&marketplace=FLIPKART</p>
+        {% endif %}
+    </div>
+</body>
+</html>
