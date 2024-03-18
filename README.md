@@ -1,6 +1,6 @@
 # DecisePrecise
 
-## This app analysis the reviews from the flipkart product pages and give sentiment scores
+## This app analyzes the reviews from the flipkart product pages and give sentiment scores
 
 Tech-Stack : Python, Torch, Huggingface-Transformers , flask
 
