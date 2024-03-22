@@ -1,7 +1,7 @@
 # DecisePrecise
 
 ****
-<a href="http://65.0.138.126:5050/"> AWS Link </a>
+<a href="http://65.0.138.126:5050/"> Check out the Website  </a>
 ****
 
 ## This app analyzes the reviews from the flipkart product pages and gives sentiment score.
