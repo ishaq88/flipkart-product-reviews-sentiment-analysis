@@ -10,7 +10,7 @@ Tech-Stack : Python, Torch, Huggingface-Transformers , flask
 
 the model is saved locally inside a "model" directory which is needed for sentiment inference Check out <a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest"> Here </a> to know more about taking inference from pretrained model
 
-*Note: The Flipkart reviews analyser only works on local host as when we try to fetch reviews from flipkart it gives internal server error but works perfectly fine for local host*
+*Note: The Flipkart reviews analyser currently only works on local host as when we try to fetch reviews from flipkart it works perfectly fine for local host but gives status code-500 for deployed app*
 
 ### screenshots👇🏼
 
