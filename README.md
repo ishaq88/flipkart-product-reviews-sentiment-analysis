@@ -1,7 +1,7 @@
 # DecisePrecise
 
 <a href="https://github.com/ishaq88/flipkart-product-reviews-sentiment-analysis/blob/main/MLOps-sentiment-model/MLops%20orchestration.ipynb"> MLOps Notebook </a>
-
+<a href="https://github.com/ishaq88/flipkart-product-reviews-sentiment-analysis/blob/main/MLOps-sentiment-model/mlops.md">MLOps markdown </a>
 ****
 <a href="http://65.0.138.126:5050/"> Check out the Website  </a>
 ****
@@ -29,6 +29,3 @@ Entered text: Not as expected....💔Disappointed with the camera and specially 
 <img src="static/demo3.jpeg" alt="Sentiment Page">
 
 ****
-##MLOps screenshots
-<img src="MLOps-sentiment-model/misc-pngs/mlflow-experiment-view.png">
-
