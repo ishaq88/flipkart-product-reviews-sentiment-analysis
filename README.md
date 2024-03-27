@@ -1,5 +1,7 @@
 # DecisePrecise
 
+<a href="https://github.com/ishaq88/flipkart-product-reviews-sentiment-analysis/blob/main/MLOps-sentiment-model/MLops%20orchestration.ipynb"> MLOps Notebook </a>
+
 ****
 <a href="http://65.0.138.126:5050/"> Check out the Website  </a>
 ****
@@ -25,3 +27,8 @@ the model is saved locally inside a "model" directory which is needed for sentim
 Entered text: Not as expected....💔Disappointed with the camera and specially performanceDesign and display is quite goodBut very laggy... Frame drops in every application and even with in home page....90hz is not working properly...Recommend not to buy📵UI is very slow and many features are unavailable.... I had so much expectations from Samsung specially but very very dissatisfied....💔
 
 <img src="static/demo3.jpeg" alt="Sentiment Page">
+
+****
+##MLOps screenshots
+<img src="MLOps-sentiment-model/misc-pngs/mlflow-experiment-view.png">
+
