@@ -1,5 +1,5 @@
 # MLOps integration with our app
-*Why MLOps*
+***Why MLOps***:
 MLOps provides reproducibility of ML pipelines, enabling more tightly-coupled collaboration across data teams, reducing conflict with devops and IT, and accelerating release velocity.
 
 ****
