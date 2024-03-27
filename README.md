@@ -1,7 +1,8 @@
 # DecisePrecise
 
 <a href="https://github.com/ishaq88/flipkart-product-reviews-sentiment-analysis/blob/main/MLOps-sentiment-model/MLops%20orchestration.ipynb"> MLOps Notebook </a>
-<a href="https://github.com/ishaq88/flipkart-product-reviews-sentiment-analysis/blob/main/MLOps-sentiment-model/mlops.md">MLOps markdown </a>
+</br>
+<a href="https://github.com/ishaq88/flipkart-product-reviews-sentiment-analysis/blob/main/MLOps-sentiment-model/MLOps.md">MLOps markdown </a>
 ****
 <a href="http://65.0.138.126:5050/"> Check out the Website  </a>
 ****
